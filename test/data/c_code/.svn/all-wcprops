@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/realmake/!svn/ver/19/trunk/test/data/c_code
+END
+extract.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/realmake/!svn/ver/19/trunk/test/data/c_code/extract.h
+END
+runexample.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/realmake/!svn/ver/19/trunk/test/data/c_code/runexample.c
+END
+custom_tokenizer.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/realmake/!svn/ver/19/trunk/test/data/c_code/custom_tokenizer.c
+END
+runexample.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/realmake/!svn/ver/19/trunk/test/data/c_code/runexample.h
+END
+extract.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/realmake/!svn/ver/19/trunk/test/data/c_code/extract.c
+END

@@ -1,0 +1,76 @@
+8
+
+dir
+36
+https://realmake.svn.sourceforge.net/svnroot/realmake/trunk/test/data/c_code
+https://realmake.svn.sourceforge.net/svnroot/realmake
+
+
+
+2010-10-01T05:10:32.710943Z
+19
+kodavx86
+
+
+svn:special svn:externals svn:needs-lock
+
+extract.h
+file
+
+
+
+
+2010-10-01T05:09:32.000000Z
+73bb701c2439b0ece8b6f6806f22d9d7
+2010-10-01T05:10:32.710943Z
+19
+kodavx86
+
+runexample.c
+file
+
+
+
+
+2010-10-01T05:09:38.000000Z
+b38711ecb4b8deb7aa785edacac102df
+2010-10-01T05:10:32.710943Z
+19
+kodavx86
+
+custom_tokenizer.c
+file
+
+
+
+
+2010-10-01T05:09:00.000000Z
+a5bcbf533ad8d858acf125786465c1e8
+2010-10-01T05:10:32.710943Z
+19
+kodavx86
+
+runexample.h
+file
+
+
+
+
+2010-10-01T05:09:57.000000Z
+81e16bfcf48a78df4d4d6dca2fa799d4
+2010-10-01T05:10:32.710943Z
+19
+kodavx86
+
+extract.c
+file
+
+
+
+
+2010-10-01T05:09:23.000000Z
+685bc458c9f0a3407e84f61e86e5bf86
+2010-10-01T05:10:32.710943Z
+19
+kodavx86
+

@@ -1,0 +1,64 @@
+.TH realmake 1  "October 5, 2010" "version 2.1" "USER COMMANDS"
+.SH NAME
+realmake \- compiles source code using the Make utility
+.SH SYNOPSIS
+.B realmake
+[\-vkh] [\-s directory] [-l language] [-n name] [-c compiler] [\-m make util] [\-f flags]
+.SH DESCRIPTION
+The Make utility is a real time-saver when it comes to compiling
+code split between dozens or even hundreds of files. The challenge
+is knowing how to set up and execute a makefile so Make can compile
+your code.
+.PP
+realmake takes care of compiling the code with the Make utility. The
+user doesn't need to take time setting up dependencies or looking up
+information on how to set up a make file. Just run realmake once and
+all your code is compiled.
+.SH OPTIONS
+.TP
+\-s <directory>
+	source code directory location
+.TP
+\-v
+	turn on verbose mode
+.TP
+\-l <language>
+	programming language the code uses
+.TP
+\-n <name>
+	name of the final executable
+.TP
+\-k
+	keep the generated makefile
+.TP
+\-c <compiler>
+	full path to compiler (i.e. -c /usr/local/gcc).
+	
+	Must be used with -f option
+.TP
+\-m <make util>
+	full path to the make utility (i.e. -m /usr/bin/make)
+.TP
+\-f <flags>
+	compile flags to compile each file into byte 
+	
+	code (i.e. -f "-c -g")
+.TP
+\-h
+	help for realmake utility
+.SH EXAMPLES
+.TP
+Compile code in the current directory:
+.IP
+.B realmake
+.TP
+Compile code in test directory and give executable name Test:
+.IP
+.B realmake \-s test/ \-n Test
+.SH EXIT STATUS
+realmake returns a zero exit status if it succeeds in compiling the 
+code in the given directory. Non zero is returned in case of failure.
+.SH AUTHOR
+Tyler Vodak (kodavx86@gmail.com)
+.SH BUGS
+To report bugs, please post a bug report on the realmake project at sourceforge.net/

@@ -1,0 +1,40 @@
+8
+
+dir
+36
+https://realmake.svn.sourceforge.net/svnroot/realmake/trunk/test/data/java_code
+https://realmake.svn.sourceforge.net/svnroot/realmake
+
+
+
+2010-10-10T05:40:44.946139Z
+27
+kodavx86
+
+
+svn:special svn:externals svn:needs-lock
+
+FibTest.java
+file
+
+
+
+
+2010-10-10T03:47:41.000000Z
+50d63bbf3d22dc3d41d37675f5140635
+2010-10-10T05:40:44.946139Z
+27
+kodavx86
+
+FibClass.java
+file
+
+
+
+
+2010-10-10T03:46:14.000000Z
+b160df5a5dd5ee46aaa936e55557fdf8
+2010-10-10T05:40:44.946139Z
+27
+kodavx86
+

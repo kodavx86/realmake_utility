@@ -1,0 +1,152 @@
+../bin/realmake -h , 4
+../bin/realmake -s , 1
+../bin/realmake -v -h , 4
+../bin/realmake -l , 1
+../bin/realmake -l abc , 1
+../bin/realmake -n , 1
+../bin/realmake -k -h , 4
+../bin/realmake -c , 1
+../bin/realmake -m , 1
+../bin/realmake -f , 1
+../bin/realmake -1 , 1
+../bin/realmake -c gcc , 1
+../bin/realmake -s data/ -v -l c -n name -k -c gcc -m make -f "-c -g" -h , 4
+../bin/realmake -s "" , 1
+../bin/realmake -s " ", 1
+../bin/realmake -s ../data/ , 5
+../bin/realmake -s data/c_code/ , 0
+data/c_code/a.out , 175
+rm data/c_code/a.out data/c_code/*.o , 0
+../bin/realmake -v -s data/c_code/ , 0
+data/c_code/a.out , 175
+rm data/c_code/a.out data/c_code/*.o , 0
+../bin/realmake -s data/c_code/ -v , 0
+data/c_code/a.out , 175
+rm data/c_code/a.out data/c_code/*.o , 0
+../bin/realmake -s data/c_code/ -l cpp , 3
+../bin/realmake -s data/c_code/ -l java , 3
+../bin/realmake -s data/c_code/ -l c , 0
+data/c_code/a.out , 175
+rm data/c_code/a.out data/c_code/*.o , 0
+../bin/realmake -s data/c_code/ -l C , 0
+data/c_code/a.out , 175
+rm data/c_code/a.out data/c_code/*.o , 0
+../bin/realmake -s data/c_code/ -n play , 0
+data/c_code/play , 175
+rm data/c_code/play data/c_code/*.o , 0
+../bin/realmake -s data/cpp_code/ , 0
+data/cpp_code/a.out , 0
+rm data/cpp_code/a.out data/cpp_code/*.o , 0
+../bin/realmake -v -s data/cpp_code/ , 0
+data/cpp_code/a.out , 0
+rm data/cpp_code/a.out data/cpp_code/*.o , 0
+../bin/realmake -s data/cpp_code/ -v , 0
+data/cpp_code/a.out , 0
+rm data/cpp_code/a.out data/cpp_code/*.o , 0
+../bin/realmake -s data/cpp_code/ -l cpp , 0
+../bin/realmake -s data/cpp_code/ -l java , 3
+../bin/realmake -s data/cpp_code/ -l c , 3
+data/cpp_code/a.out , 0
+rm data/cpp_code/a.out data/cpp_code/*.o , 0
+../bin/realmake -s data/cpp_code/ -l CPP , 0
+data/cpp_code/a.out , 0
+rm data/cpp_code/a.out data/cpp_code/*.o , 0
+../bin/realmake -s data/cpp_code/ -n play , 0
+data/cpp_code/play , 0
+rm data/cpp_code/play data/cpp_code/*.o , 0
+../bin/realmake -s data/java_code/ , 0
+java -classpath data/java_code/ FibTest , 0
+rm data/java_code/*.class , 0
+../bin/realmake -v -s data/java_code/ , 0
+java -classpath data/java_code/ FibTest , 0
+rm data/java_code/*.class , 0
+../bin/realmake -s data/java_code/ -v , 0
+java -classpath data/java_code/ FibTest , 0
+rm data/java_code/*.class , 0
+../bin/realmake -s data/java_code/ -l cpp , 3
+../bin/realmake -s data/java_code/ -l java , 0
+../bin/realmake -s data/java_code/ -l c , 3
+java -classpath data/java_code/ FibTest , 0
+rm data/java_code/*.class , 0
+../bin/realmake -s data/java_code/ -l JAVA , 0
+java -classpath data/java_code/ FibTest , 0
+rm data/java_code/*.class , 0
+../bin/realmake -s data/java_code/ -n play , 0
+java -classpath data/java_code/ FibTest , 0
+rm data/java_code/*.class , 0
+../bin/realmake -l "" , 1
+../bin/realmake -l " ", 1
+../bin/realmake -n "" , 1
+../bin/realmake -n " ", 1
+../bin/realmake -c "" , 1
+../bin/realmake -c " ", 1
+../bin/realmake -m "" , 1
+../bin/realmake -m " ", 1
+../bin/realmake -f "" , 1
+../bin/realmake -f " ", 1
+../bin/realmake -s data/c_code -n play -v , 0
+data/c_code/play , 175
+rm data/c_code/play data/c_code/*.o , 0
+../bin/realmake -s data/c_code -k , 0
+data/c_code/a.out , 175
+rm data/c_code/a.out data/c_code/*.o , 0
+rm Makefile.* , 0
+../bin/realmake -s data/c_code/ -c gcc -f "-c" , 3
+../bin/realmake -s data/c_code/ -c gcc -f "-c -zz" , 3
+../bin/realmake -s data/c_code/ -m make , 3
+../bin/realmake -s data/c_code/ -v -l c -n play -k -f "-c" , 0
+stat Makefile.* , 0
+data/c_code/play , 175
+rm data/c_code/play data/c_code/*.o Makefile.* , 0
+../bin/realmake -s data/cpp_code -n play -v , 0
+data/cpp_code/play , 0
+rm data/cpp_code/play data/cpp_code/*.o , 0
+../bin/realmake -s data/cpp_code -k , 0
+data/cpp_code/a.out , 0
+rm data/cpp_code/a.out data/cpp_code/*.o , 0
+rm Makefile.* , 0
+../bin/realmake -s data/cpp_code/ -c g++ -f "-c" , 3
+../bin/realmake -s data/cpp_code/ -c g++ -f "-c -zz" , 3
+../bin/realmake -s data/cpp_code/ -m make , 3
+../bin/realmake -s data/cpp_code/ -v -l cxx -n play -k -f "-c" , 0
+stat Makefile.* , 0
+data/cpp_code/play , 0
+rm data/cpp_code/play data/cpp_code/*.o Makefile.* , 0
+../bin/realmake -s data/cpp_code/ -v -l cpp -n play -k -f "-c" , 0
+stat Makefile.* , 0
+data/cpp_code/play , 0
+rm data/cpp_code/play data/cpp_code/*.o Makefile.* , 0
+../bin/realmake -s data/cpp_code/ -v -l c++ -n play -k -f "-c" , 0
+stat Makefile.* , 0
+data/cpp_code/play , 0
+rm data/cpp_code/play data/cpp_code/*.o Makefile.* , 0
+../bin/realmake -s data/cpp_code/ -v -l cc -n play -k -f "-c" , 0
+stat Makefile.* , 0
+data/cpp_code/play , 0
+rm data/cpp_code/play data/cpp_code/*.o Makefile.* , 0
+../bin/realmake -s data/java_code -n play -v , 0
+java -classpath data/java_code/ FibTest , 0
+rm data/java_code/*.class , 0
+../bin/realmake -s data/java_code -k , 0
+java -classpath data/java_code/ FibTest , 0
+rm data/java_code/*.class , 0
+rm Makefile.* , 0
+../bin/realmake -s data/java_code/ -c javac -f "-c" , 3
+../bin/realmake -s data/java_code/ -c javac -f "-c -zz" , 3
+../bin/realmake -s data/java_code/ -m make , 3
+../bin/realmake -s data/java_code/ -v -l java -n play -k -f "" , 1
+stat Makefile.* , 1
+java -classpath data/java_code/ FibTest , 1
+rm data/java_code/*.class Makefile.* , 1
+../bin/realmake -s data/java_code/ -v -l java -n play -k -f "" , 1 
+stat Makefile.* , 1
+java -classpath data/java_code/ FibTest , 1
+rm data/java_code/*.class Makefile.* , 1
+../bin/realmake -s data/java_code/ -v -l java -n play -k -f "-nowarn" , 0
+stat Makefile.* , 0
+java -classpath data/java_code/ FibTest , 0
+rm data/java_code/*.class Makefile.* , 0
+../bin/realmake -s data/java_code/ -v -l java -n play -k -f "-verbose" , 0
+stat Makefile.* , 0
+java -classpath data/java_code/ FibTest , 0
+rm data/java_code/*.class Makefile.* , 0
